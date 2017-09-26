@@ -1,0 +1,179 @@
+*{margin: 0px; 
+ padding: 0px;}
+body{
+	margin: 10px auto;
+	background:url(image/background_sky.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	
+}
+#khung{
+	width: 1200px;
+	height: 100%;
+	background-color: #ffffff;
+    margin: 0 auto;
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 10px;
+}
+#wapper{
+	padding: 15px;
+	border-radius: 15px;
+}
+#logo{
+	width: 0px;
+	height: 240px;
+	background-image: none;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	float: left;
+	border-radius: 10px;
+}
+#header{
+	width: 1170px;
+	height: 250px;
+	background-image: none;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	float: left;
+
+}
+#chua{
+    width: 75%;
+    height: 100%;
+    margin: 0px auto;
+}
+/*Định dạng thanh menu */
+#menu{
+	width: 100%;
+	height: 50px;
+	background:#3883cc;
+	margin-top: 300px;
+	clear: both;
+		border-radius: 20px;
+
+}
+
+#luachon, #luachon ul{
+	list-style: none;
+	position: relative;
+	line-height: 1.6em;  
+}
+#luachon a:link, #luachon a:visited, #luachon a:active{
+	display: block;
+	padding: 12px 10px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    background:#3883cc;
+
+}
+#luachon a:hover{
+	background: white;
+	color:#333333;
+}
+#luachon #imghome >a:hover{
+	background: #33FF00;
+	color: red;
+}
+/*định dạng > li chỉ trỏ trực tiếp cái li con của cái id=luachon*/
+#luachon li ul li{
+	border-right: none;
+
+}
+#luachon li{
+	float: left;
+	border-right: 2px solid white;
+	position: relative;
+}
+/*Định dang cho tất cả cái ul thuộc luachon*/
+#luachon ul{
+	position: absolute;
+	top: auto;
+	display: none;
+}
+#luachon li:last-child{
+	border : none;
+}
+#luachon li ul a{
+	width: 200px;
+	float: left;
+}
+#luachon ul ul{
+	top: auto;
+}
+#luachon li ul ul{
+	position: absolute;
+	top: 0;
+	left: 100%;
+	margin: 0px 0px 0px 2px;
+}
+#luachon li:hover ul ul,
+#luachon li:hover ul ul ul,
+#luachon li:hover ul ul ul ul{
+	display: none;
+}
+#luachon li:hover ul,
+#luachon li li:hover ul,
+#luachon li li li:hover ul,
+#luachon li li li li:hover ul{
+	display: block;
+}
+#dongchuchay{
+	height: 20px;
+	width: 100%;
+	background-color: #3883de;
+    
+
+}
+
+
+/*end dinh dạng thanh menu*/
+#noidung{
+	width: 100%;
+	height:500px;
+	background: #ffffff;
+	margin-top: 20px;
+}
+
+#left{
+	width: 180px;
+	height: 1000px;
+	background: #66FF00;
+	float: left;
+	margin-right: 10px;
+	padding-right: 10px;
+		border-radius: 20px;
+
+}
+#content{
+	width: 700px;
+	height: 100%;
+	background: #FF33CC;
+	float: left;
+	border-radius: 10px;
+	padding: 20px;
+}
+#right{
+	width: 200px;
+	height: 500px;
+	background: #FFFFFF;
+	float: left;
+	margin-left: 10px;
+	padding: 10px;
+	border-radius: 20px;
+}
+#footer{
+	width: 1170px;
+	height: 30px;
+	background:#FF9966;
+	clear: both;
+	border-radius: 5px;
+}
+
+#marq {
+	height: 500px;
+}
