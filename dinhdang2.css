@@ -166,6 +166,9 @@ body{
 	padding: 10px;
 	border-radius: 20px;
 }
+#hinh1 #hinh2  #hinh3 #hinh4 #hinh5 #hinh6 #hinh7 #hinh8 #hinh9{
+	margin-bottom: 10px;
+} 
 #footer{
 	width: 1170px;
 	height: 30px;

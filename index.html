@@ -1,74 +1,173 @@
-<html><head>  
-   <title>
-    Giao diện của trang web
-   </title>
-   <link rel="stylesheet" type="text/css" href=".\dinhdang1.css">
- </head>
- <body>
-   <div id="waper">
-         <p align="center" >
-         <img src="D:\CODE HTML-JAVASCRIPT-PHP\Chạy HTML\image/hinh2.jpg" style="
-                         position: relative;">
-            <marquee height="50" direction="left" behavior="scroll" scrollamount="20" bgcolor="#33FFCC" vspace="25" style="
-                             position: absolute;
-                             top: -20px;
-                             left: 163px;
-                             width: 1024px;">
-          <h2>Công Ty Du Lịch Khám Phá Vàng Kính Chào Quý Khách </h2>
-          </marquee>
-         </p>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trang WEB công ty</title>
+	<link rel="stylesheet" type="text/css" href="dinhdang2.css" />
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="dropdown_thanhmenu.js"></script>
+	<script>
+       $(document).ready(function(){
+         //alert("Trung Hello")
+        console.log("Chạy ok");
+
+       });
+    </script>
+
+</head>
+<body>
+      <div id="khung">
+          <!--<div id="logo" style="background-image: url(image/hanoi.jpg)" title="Ảnh đại diện cho công ty du lich khám phá vàng" > </div>--><!--end #logo-->
+          <div id="wapper">
+          <div id="header" style="background-image: url(image/hinh1.jpg)" title="Ảnh đại diện phi trường "></div><!--end #header-->
+	      <div id="menu">
+	        <div id="chua">
+	            <ul id="luachon">
+	                <li id="imghome"><a href="#" ><img src="image/home_icon.jpg" alt="home" width="30px" height="19px" /></a></li>
+	              	<li><a href="./content.html" target="content">  Trang Chủ </a></li>
+	              	<li><a href="#">  Giới Thiệu </a>
+	                    <ul> 
+	                    	<li><a href="#">Giới Thiệu Về Công Ty</a></li>
+	                    	<li><a href="#">Nhân Viên</a></li>
+	                    </ul>
+	              	</li><!--end Gioi Thieu -->
+	              	<li><a href="#"> Hướng Dẫn Đặt Vé </a>
+	                    <ul >
+	                    	<li><a href="#">Đặt Chỗ</a>
+	                    	    <ul >
+	                    	    	<li><a href="#"> Tin Tức </a></li>
+	              	                <li><a href="#"> Đặt Tour </a></li>
+	              	                <li><a href="#"> Tuyển Dụng </a></li>
+	                                <li><a href="#"> Liên Hệ </a></li>
+	                    	    </ul>
+	                    	 </li>
+	                    	<li><a href="#">Quy Định Về Hành Lí</a>
+	                                <ul >
+	                    	    	<li><a href="#"> Khối Lượng </a></li>
+	              	                <li><a href="#"> Mua Hành Lí </a></li>
+	              	                
+	                    	    </ul>
+	                    	</li>
+	                    	<li><a href="#">Đổi Trả Vé</a></li>
+	                    </ul>
+	              	</li><!-- end  Hướng Dẫn Đặt Vé -->
+	              	<li><a href="#"> Tin Tức </a></li>
+	              	<li><a href="#"> Đặt Tour </a>
+	                    <ul >
+	                    	<li><a href="#"> Tin Tức </a></li>
+	              	        <li><a href="#"> Đặt Tour </a></li>
+	              	       <li><a href="#"> Tuyển Dụng </a></li>
+	                       <li><a href="#"> Liên Hệ </a></li>
+	                    </ul>
+	              	</li><!-- end Đặt Tour -->
+	              	<li><a href="#"> Tuyển Dụng </a></li>
+	                <li><a href="#"> Liên Hệ </a></li>
+	              </ul><!--end #luachon-->
+	         </div><!--End #chua-->
+	      </div><!--End #menu-->
+	      
+	      <div id="noidung">
+            <div id="left">
+            An old version of the spec says you could use an URL to an image for the ellipsis, but it looks as if that was dropped.
+
+           There is a two-value syntax, e.g. text-overflow: ellipsis ellipsis;, that would control the overflow on the left and right sides of the same container. I'm not sure how that would be possible to achieve. Perhaps centered text in a too-small container? The new spec says this, as well as defining a string, is "at risk."
+           I'm not sure where ellipsis-word came from. It's not in the spec or in any other documentation other than on WebPlatform.org.
+
+           The text-overflow property used to be shorthand for the combination of text-overflow-mode and text-overflow-ellipsis, but not anymore and those separate properties don't exist.
+           An old version of the spec says you could use an URL to an image for the ellipsis, but it looks as if that was dropped.
+
+           There is a two-value syntax, e.g. text-overflow: ellipsis ellipsis;, that would control the overflow on the left and right sides of the same container. I'm not sure how that would be possible to achieve. Perhaps centered text in a too-small container? The new spec says this, as well as defining a string, is "at risk."
+
+          </div><!--end #Left -->	
+          <div id="content">
+            <!--<iframe name="content" id="framecontent" width: 780px;
+	             height: 100%; scrolling="no" noresize></iframe>-->
+	              Kính chào Quý khách !
+
+    Cty TNHH TM & DV Du lịch Thanh Bình với chức năng kinh doanh trong lĩnh vực vé máy bay nội địa và quốc tế đang là địa chỉ đáng tin cậy nhất của khách hàng gần xa.  Tháng 3 năm 2012 Phòng vé máy bay Quốc tế Thanh Bình được  hệ thống giữ chổ hàng không quốc tế Amadeaus trao tặng cúp vàng cho thành tích doanh số cao nhất miền trung năm 2011.  Đây là minh chứng đáng kể cho hành trình xây dựng thương hiệu trong lĩnh vực dịch vụ vé máy bay nội địa và quốc tế của Cty TNHH TM & DV DL Thanh Bình ngày càng xứng đáng với  sự tin tưởng và hợp tác của khách hàng.
+
+   Với đội ngũ nhân viên chuyên nghiệp và tận tâm, Hải Tứ đang là đại lý hàng đầu tại Đà Nẵng chuyên cung cấp những dịch vụ đặc biệt sau:<br/>
+►&nbsp;  Vé máy bay các chặng nội địa và quốc tế của VietnamAirlines, Jetstar, VietjetAir<br/>
+►&nbsp; Vé máy bay các chuyến bay quốc tế của các hãng American Airlines, Air France, Asiana Air, Cathay Pacific, China Air, Korean Airlines, United Airlines…<br/>
+►&nbsp; Tư vấn miễn phí các chuyến bay quốc tế và hỗ trợ dịch vụ cho người già, người khuyết tật.  Đặc biệt dịch vụ hướng dẫn thủ tục Hải Quan cho các đoàn khách Viêt Nam trên các chặng bay quốc tế.<br/>
+►&nbsp;Visa và gia hạn Visa đến tất cả các quốc gia trên thế giới.<br/>
+►&nbsp;Tư vấn đặt chổ các khách sạn và resort tại các thành phố tại Việt Nam<br/>
+►&nbsp; Tư vấn và giới thiệu các công ty Du lịch hàng đầu chuyên thị trường quốc tế tại Việt Nam.<br/>
+    Tiêu chí hoạt động của công ty chúng tôi là:  đến với THANH BÌNH là đến với dịch vụ hàng không chuyên nghiệp và luôn làm Quý khách hài lòng.<br/>
 
 
-    </div>
-    
-      <div id="menu">
-            <marquee id="marq" scrollamount="20" direction="up" behavior=scroll scrolldelay="0" >
-               <!--onmouseover="this.stop()" onmouseout="this.start()"-->
-             <a href="Link"><img src="image/banahill.jpg" title="Bà Nà Hill" width="150" height="150"/></a>
-             </br>
-              <a href="Link"> <img src="image/hoian.jpg" title="Hội An" width="150" height="150"/></a>
-             </br>
-               <a href="Link"><img src="image/halong.jpg" title="Hạ Long" width="150" height="150"/></a>  </br>
-                   <a href="Link"><img src="image/hanoi.jpg" title="Hà Nội" width="150" height="150"/></a>  </br>
-               <a href="Link"> <img src="image/thapcham.jpg" title="Tháp Chăm" width="150" height="150"/></a>  </br>
-              <!--  <a href="Link"><img src="image/vinpear.jpg" title="Vinpear" width="150" height="150"/></a>  </br>
-                <a href="Link"><img src="image/hoian2.jpg" title="Hội An" width="150" height="150"/></a>  </br>
-                 <a href="Link"><img src="image/chuahuong.jpg" title="Chùa Hương" width="150" height="150"/></a>  </br>
-               <a href="Link"><img src="image/saigon.jpg" title="Sài Gòn" width="150" height="150"/></a>  </br>-->
-              </marquee>
-       
-      </div>
+MỖI CHUYẾN BAY LÀ MỘT HÀNH TRÌNH THÚ VỊ !<br/>
 
+Xin cảm ơn và trân trọng kính chào!<br/>
 
-      <div id="maincontent">
-         <div id="chia1">
-             <dt>Công ty du lịch khám phá vàng GDT (golden travel)</dt> của chúng tôi là một công ty chuyên tư vấn các tour du lịch trong và ngoài nước
-             ,tư vấn miễn phí tìm những vé máy bay giá rẻ trên thị trường.
-         
-             <h2>Bạn đang tìm phòng vé máy bay tại Đà Nẵng giá rẻ, uy tín, chất lượng </h2>
-              Hiện nay, nhu cầu đi lại ngày một tăng mạnh kéo theo hàng loạt các dịch vụ vận chuyển, tàu xe mở ra tấp nập.
-              Để có thể dễ dàng đi lại nhanh chóng và thuận tiện thì phương tiện máy bay là một trong những lựa chọn được ưu tiên hàng đầu.
-              Nắm bắt được nhu cầu đó, các phòng vé máy bay tại Đà Nẵng bắt đầu mở ra và tranh thủ chiếm lấy thị phần khách hàng tiềm năng này.
-              <i>PHÒNG VÉ THANH BÌNH </i>tại Đà Nẵng là một trong những nơi đã và đang cung cấp lượng vé máy bay ra ngoài thị trường cho vô số khách hàng tiềm năng.
-              Bạn hiện đang cần tìm một địa điểm bán máy bay trực tuyến giá rẻ nhất năm 2016 – 2017, tại đây luôn cung cấp vé với tiêu chí giá vé máy bay rẻ nhất và
-              việc hỗ trợ quý khách đặt vé nhanh chóng tiện lợi chính xác.Phòng vé hiện nay có đội ngũ tư vấn viên chuyên nghiệp, quy trình tư vấn, chăm sóc và giao vé
-              tận nơi rất nhiệt tình và chu đáo. Bên cạnh đó, việc giao vé và áp dụng đa phương thức kết hợp thanh toán linh hoạt và an toàn.
+------------------------------------------------------------------<br/>
+Trân trọng,
+          </div>	
+          <div id="right">
+                <table>
+                      <td >
+                        <marquee id="marq" scrollamount="5" direction="up" loop="50" scrolldelay="0" onmouseover="this.stop()" onmouseout="this.start()">
+
+                        <div id="hinh1">
+                             <a href="Link"><img src="image/banahill.jpg" title="Bà Nà Hill" width="150" height="150" /></a>
+                             <a href="#" style="text-decoration: none">Du lịch bà Nà Hill với những trò chơi kì thú chiêm ngưỡng bầu trời châu Âu tại Việt Nam</a>
+                        </div><!--End #hinh1-->
+
+                        <div id="hinh2">
+                           <a href="http://www.hoianworldheritage.org.vn/vi/news/Tong-quan-Hoi-An/Gioi-thieu-63.hwh" target="_blank"> <img src="image/hoian.jpg" title="Hội An" width="150" height="150"/></a>
+                          <a href="#">Cung chúng tôi tham quan Phố cổ Hội An với những nét cổ kính độc đáo </a>
+                        </div><!--End #hinh2-->
+
+                        <div id="hinh3">
+                        	<a href="Link"><img src="image/halong.jpg" title="Hạ Long" width="150" height="150"/></a>
+                        	<a href="#">Đán với kì quan thiên nhiên của thế giới Vịnh Hạ Long bạn có thể chiêm ngưỡng những vẻ đạp hút hồn nới đây </a>
+
+                        </div><!--End #hinh3-->
+
+                        <div id="hinh4">
+                        	 <a href="Link"><img src="image/hanoi.jpg" title="Hà Nội" width="150" height="150"/></a>
+                        	 <a href="#">Tham quan Hồ Gươm - Hà Nội để biết hơn về lịch sử của đất nước và con người Việt Nam</a>
+                        	
+                        </div><!--End #hinh4-->
+
+                        <div id="hinh5">
+                        	   <a href="Link"> <img src="image/thapcham.jpg" title="Tháp Chăm" width="150" height="150"/></a>
+                        	   <a href="#">Cùng chiêm ngưỡng vẻ đẹp độc đáo của dân tộc Chăm với kiến trúc những ngôi tháp rực rỡ </a>
+                        	
+                        </div><!--End #hinh5-->
+
+                        <div id="hinh6">
+                        	 <a href="Link"><img src="image/vinpear.jpg" title="Vinpear" width="150" height="150"/></a>
+                        	 <a href="#">Tham quan ViPear cùng những cuộc phưu lưu độc đáo trên những ddoooif núi cao </a>
+                        	
+                        </div><!--End #hinh6-->
+
+                        <div id="hinh7">
+                        	<a href="Link"><img src="image/hoian2.jpg" title="Hội An" width="150" height="150"/></a>
+                        	<a href="#">Cung chúng tôi tham quan Phố cổ Hội An với những nét cổ kính độc đáo </a>
+
+                        </div><!--End #hinh7-->
+
+                        <div id="hinh8">
+                        	 <a href="Link"><img src="image/chuahuong.jpg" title="Chùa Hương" width="150" height="150"/></a>
+                        	 <a href="#">Chùa Hương là cách nói trong dân gian, trên thực tế chùa Hương hay Hương Sơn là cả một quần thể văn hóa - tôn giáo Việt Nam, gồm hàng chục ngôi chùa thờ Phật, vài ngôi đền thờ thần, các ngôi đình, thờ tín ngưỡng nông nghiệp</a>
+
+                        	
+                        </div><!--End #hinh8-->
+
+                        <div id="hinh9">
+                        	 <a href="Link"><img src="image/saigon.jpg" title="Sài Gòn" width="150" height="150"/></a>
+                        	 <a href="#">Sài Gòn, nơi thành phố tưởng như không bao giờ ngưng lại, mà cứ biến động không ngừng.</a>
+                        	
+                        </div><!--End #hinh9-->                                              
+                       </marquee>
+                     </td>
+              </table>
+          </div><!--End #right-->
+          </div><!--end #noidung -->	
+          <div id="footer">
+             <h5 style="margin-top: 5px" align="center">Version 1.0.1 Copyright &copy; 2017 By Tran Huu Trung. All rights reserved.</h5>
           </div>
-          <div id="chia2">
-              Với nhu cầu đặt vé trực tuyến, săn vé giá rẻ và thuận tiện cho khách hàng mọi lúc mọi nơi.PHÒNG VÉ THANH BÌNH tiếp tục hướng tới việc đầu tư website cung ứng vé máy bay trực tuyến, 
-              giúp khách hàng tiếp cận được với nguồn vé rẻ nhất, nhưng chất lượng phục vụ nhiệt tình chu đáo tới toàn bộ quý khách hàng.
-              <ul>
-                <li> PHÒNG VÉ THANH BÌNH nhận cung ứng vé máy bay nội địa .</li>
-                <li> Hỗ trợ đặt vé, cung ứng vé máy bay quốc tế cho mọi quý khách hàng có nhu cầu.</li>
-                <li> Ngoài ra, PHÒNG VÉ THANH BÌNH còn cung ứng vé đoàn, tour du lịch, du học, lao động giá rẻ nhất.</li>
-                <li> Giao vé đa phương thức ( Qua ĐT, SMS, EMS, Email ).</li>
-             </ul>
-          </div>
-      </div>
-      <div id="end">
-          <h5 style="margin-top: 2px">Version 1.0 Copyright © 2017 By Tran Huu Trung. All rights reserved.</h5>
-     </div>
-   
-
- <div style="text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 100%;cursor: pointer;line-height: 0;"><a title="Kết nối với chùng tôi để được tư vấn." target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&amp;utm_campaign=000_logo&amp;utm_medium=website_khamphavang&amp;utm_content=footer_img"><img src="https://cloud.githubusercontent.com/assets/23024110/20663010/9968df22-b55e-11e6-941d-edbc894c2b78.png" alt="www.000webhost.com"></a></div>
-</body></html>
+      </div><!--End #wapper-->
+    </div><!--End #khung-->
+</body>
+</html>
